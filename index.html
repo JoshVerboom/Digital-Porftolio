@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/436dc11fbf.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="opleiding.html">Opleiding</a>
+  <a href="overmij.html">Over mij</a>
+  <a href="beroep.html">Beroep</a>
+  <a href="nieuws.html">Nieuws</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+    
+    <a href="index.html"><img id="logo" src="img/Logo.png"></a>
+    
+    <div class="center">
+        <div class="jumbotron">
+        <h1>Portfolio</h1>
+        <p>Welkom op mijn portfolio site.</p>
+        <p>Hier kun je alles vinden over mij en wat ik gedaan heb.</p>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Java Scripts -->
+    
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+</body>
+</html>
